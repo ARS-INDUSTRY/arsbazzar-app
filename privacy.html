@@ -1,1 +1,522 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for ARS BAZZAR mobile application. Learn how ARS INDUSTRY handles, protects, and respects your personal data under DPDP Act and GDPR where applicable.">
+    <meta name="robots" content="index, follow">
+    <title>Privacy Policy - ARS BAZZAR</title>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a5568;
+            --accent: #0284c7;
+            --accent-hover: #0369a1;
+            --border: #e2e8f0;
+            --surface: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.05);
+            --callout-bg: #f0fdf4;
+            --callout-border: #bbf7d0;
+            --callout-text: #166534;
+            --alert-bg: #fffbeb;
+            --alert-border: #fef08a;
+            --alert-text: #854d0e;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --text-primary: #f8fafc;
+                --text-secondary: #cbd5e1;
+                --accent: #38bdf8;
+                --accent-hover: #7dd3fc;
+                --border: #334155;
+                --surface: #1e293b;
+                --shadow: rgba(0, 0, 0, 0.3);
+                --callout-bg: #064e3b;
+                --callout-border: #059669;
+                --callout-text: #a7f3d0;
+                --alert-bg: #78350f;
+                --alert-border: #d97706;
+                --alert-text: #fef08a;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0 2rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2.5rem;
+        }
+
+        .brand-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .policy-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav.toc {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .toc h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .toc ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .toc ul {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .permission-block {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .permission-name {
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .callout {
+            background-color: var(--callout-bg);
+            border: 1px solid var(--callout-border);
+            color: var(--callout-text);
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert {
+            background-color: var(--alert-bg);
+            border: 1px solid var(--alert-border);
+            color: var(--alert-text);
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding: 2.5rem 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 1rem;
+            border-radius: 6px;
+        }
+
+        .contact-card strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="brand-name">ARS BAZZAR</div>
+            <h1 class="policy-title">Mobile Application Privacy Policy</h1>
+            <div class="meta-info">
+                <span><strong>Effective Date:</strong> July 8, 2026</span>
+                <span><strong>Last Updated:</strong> July 8, 2026</span>
+            </div>
+        </header>
+
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#introduction">1. Introduction & Scope</a></li>
+                <li><a href="#data-controller">2. Data Fiduciary / Controller</a></li>
+                <li><a href="#legal-basis">3. Legal Basis for Processing</a></li>
+                <li><a href="#data-collection">4. Information We Collect</a></li>
+                <li><a href="#android-permissions">5. Android OS Permissions</a></li>
+                <li><a href="#cookies-identifiers">6. Cookies and Similar Technologies</a></li>
+                <li><a href="#third-party">7. Third-Party Data Processors</a></li>
+                <li><a href="#data-transfers">8. International Data Transfers</a></li>
+                <li><a href="#foreground-services">9. Foreground Service Architecture</a></li>
+                <li><a href="#data-retention">10. Retention & Deletion</a></li>
+                <li><a href="#security">11. Information Security</a></li>
+                <li><a href="#children">12. Children's Privacy</a></li>
+                <li><a href="#user-rights">13. Your Rights (DPDP & GDPR)</a></li>
+                <li><a href="#updates">14. Updates to This Policy</a></li>
+                <li><a href="#contact">15. Contact & Grievance Redressal</a></li>
+            </ul>
+        </nav>
+
+        <section id="introduction">
+            <h2>1. Introduction & Scope</h2>
+            <p>Welcome to ARS BAZZAR. This Privacy Policy outlines how <strong>ARS INDUSTRY</strong> ("we", "our", or "us") collects, uses, processes, discloses, and protects your personal data when you use our mobile application ("App") available on the Google Play Store.</p>
+            <p>ARS BAZZAR operates as a local e-commerce platform originating from Domkal, Murshidabad, West Bengal, with upcoming expansion across the entire territory of India. We are committed to protecting your privacy in strict accordance with the <strong>India Digital Personal Data Protection (DPDP) Act</strong>, the <strong>General Data Protection Regulation (GDPR)</strong> where applicable, and <strong>Google Play Developer Program Policies</strong> (including the Google User Data Policy).</p>
+            <p>By downloading, installing, or using ARS BAZZAR, you explicitly acknowledge the data practices described in this document.</p>
+        </section>
+
+        <section id="data-controller">
+            <h2>2. Data Fiduciary / Controller</h2>
+            <p>Under the India DPDP Act, ARS INDUSTRY acts as the <strong>Data Fiduciary</strong>, determining the purpose and means of processing your personal data. Our operations are headquartered at:</p>
+            <div class="contact-card" style="margin-top: 0.5rem; max-width: 400px;">
+                <strong>ARS INDUSTRY</strong><br>
+                Kupila Rd Kupila, Domkal, Murshidabad,<br>
+                West Bengal, India 742303 
+            </div>
+        </section>
+
+        <section id="legal-basis">
+            <h2>3. Legal Basis for Processing</h2>
+            <p>We process your personal data under the following legitimate legal frameworks:</p>
+            <ul>
+                <li><strong>User Consent:</strong> When you voluntarily grant runtime permissions or sign up for services within the App.</li>
+                <li><strong>Contract Fulfillment:</strong> When processing your name, address, and mobile number to fulfill and deliver your retail orders.</li>
+                <li><strong>Legal Obligations:</strong> To maintain transparent accounting records, verify authentic transactions, and comply with applicable local statutory laws.</li>
+                <li><strong>Legitimate Business Interests:</strong> To optimize application speed, verify system reliability, mitigate fraud, and maintain secure support communication.</li>
+            </ul>
+        </section>
+
+        <section id="data-collection">
+            <h2>4. Information We Collect & How We Use It</h2>
+            <p>We only collect data that is strictly necessary to provide, optimize, and secure our local e-commerce services. This collection falls into the following categories:</p>
+            
+            <h3>A. Account and Authentication Data</h3>
+            <p>To access ordering capabilities, users must authenticate. User authentication is securely managed using Firebase Authentication. Passwords are handled by Firebase according to Google's security infrastructure. Alternatively, if you log in via Google Sign-In, we receive tokenized profile information (name, email, and profile picture URL) authorized by your Google account configuration.</p>
+            
+            <h3>B. Transaction and Payment Information</h3>
+            <p>Presently, ARS BAZZAR operates exclusively on a <strong>Cash on Delivery (COD)</strong> fulfillment model. We do not collect, process, or store credit card numbers, bank account details, or net banking credentials. To support future technical scalability, updates may introduce Unified Payments Interface (UPI) and other digital payment aggregators. Any such integration will occur through secure, PCI-DSS compliant third-party SDKs, and this policy will be updated accordingly.</p>
+
+            <h3>C. User-Generated Content (UGC)</h3>
+            <p>Our application does not include public-facing profiles, social walls, or community commentary zones. User-generated content is strictly restricted to functional feedback mechanisms and private Customer Support Chat messages. This transactional text is stored securely in our database to help resolve your operational inquiries.</p>
+
+            <h3>D. Product Media Hosting</h3>
+            <p>We integrate Cloudinary infrastructure for optimized delivery of product imagery. Currently, Cloudinary is used only for hosting administrator-uploaded product images. No personal user media is currently uploaded.</p>
+        </section>
+
+        <section id="android-permissions">
+            <h2>5. Android OS Permissions & Runtime Disclosures</h2>
+            <p>In accordance with the Google Play User Data Policy, we provide transparent declarations regarding the explicit permissions our App requests. We never scan unrelated storage directories, silently monitor background actions, or sell permission-gated data assets.</p>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.INTERNET</span>
+                <p><strong>Purpose:</strong> Fundamental core permission. Allows the application to communicate with our Firebase back-end services, retrieve online product listings, process e-commerce orders, and synchronize transactional states.</p>
+            </div>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.ACCESS_NETWORK_STATE</span>
+                <p><strong>Purpose:</strong> Enables the app to check whether an active internet connection exists. This prevents data fragmentation, optimizes network requests, and gracefully alerts you if your device goes offline.</p>
+            </div>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.READ_EXTERNAL_STORAGE<br>android.permission.WRITE_EXTERNAL_STORAGE</span>
+                <p><strong>Purpose:</strong> On compatible legacy versions of Android, these permissions facilitate file workflows. On modern iterations of Android, ARS BAZZAR utilizes native app-specific storage and scoped access methods that do not compromise broader device storage data. Device storage access is confined strictly to exporting your billing invoice PDFs to designated system directories and writing internal application diagnostic logs. ARS BAZZAR never scans unrelated files, photos, or media on your device, and never uploads files without explicit user action.</p>
+            </div>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.READ_CONTACTS<br>android.permission.WRITE_CONTACTS</span>
+                <p><strong>Purpose:</strong> Requested explicitly to facilitate verified customer care channels. These permissions allow the app to save the official <em>ARS BAZZAR Support Number</em> directly into your device contact list, and verify if that official record already exists. This design protects you from malicious third parties attempting phishing or impersonating our brand. <strong>The App does not harvest, upload, analyze, distribute, synchronize, or sell your personal address book data.</strong></p>
+            </div>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.ACCESS_COARSE_LOCATION<br>android.permission.ACCESS_FINE_LOCATION</span>
+                <p><strong>Purpose:</strong> Location permission is requested ONLY when the user voluntarily chooses to add or update a delivery address. Accurate coordinate data ensures that our local delivery agents can locate your drop-off point seamlessly. <strong>No continuous tracking occurs, location is never monitored in the background, and data is never sold to advertising networks.</strong></p>
+            </div>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.POST_NOTIFICATIONS</span>
+                <p><strong>Purpose:</strong> Used to deliver critical real-time alerts regarding order updates, support replies, and optional promotional notifications or localized market offers. Users retain total control and can toggle this permission off at any time via Android System Settings.</p>
+            </div>
+
+            <div class="permission-block">
+                <span class="permission-name">android.permission.FOREGROUND_SERVICE<br>android.permission.FOREGROUND_SERVICE_DATA_SYNC</span>
+                <p><strong>Purpose:</strong> Governs an optional user-activated feature called <em>Live Support Sync</em>. When enabled, it executes a visible foreground service to keep your active customer service chat instance synchronized in real-time and deliver instant message alerts while the app interface is minimized. <span class="alert" style="padding: 2px 6px; display: inline;">Notice: Enabling this feature may increase device battery consumption.</span> This service is <strong>never</strong> utilized for background surveillance, advertising, or unauthorized background tracking.</p>
+            </div>
+        </section>
+
+        <section id="cookies-identifiers">
+            <h2>6. Cookies and Similar Technologies</h2>
+            <p>The Android application itself does not use browser cookies to log your habits. However, underlying integrations including Firebase SDKs and Google Play Services may automatically deploy localized hardware device identifiers, analytical tokens, or temporary instance IDs. These are strictly used to authenticate user roles, secure data transmission channels, monitor performance thresholds, and keep system functionality working reliably.</p>
+        </section>
+
+        <section id="third-party">
+            <h2>7. Third-Party Data Processors</h2>
+            <p>To deliver modern cloud architecture, we partner with sub-processors who adhere to stringent privacy standards. These entities are bound by contractual data protection terms and are prohibited from using your information for independent marketing pursuits.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partner Service</th>
+                        <th>Core Utility</th>
+                        <th>Privacy Information Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Firebase Realtime Database</strong></td>
+                        <td>Secure structured cloud storage for e-commerce inventories and user ordering records.</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Services</strong></td>
+                        <td>Underlying API integrations, app deployment infrastructure, and security validation.</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cloudinary</strong></td>
+                        <td>Optimized delivery of administrator-side application product images only.</td>
+                        <td><a href="https://cloudinary.com/privacy" target="_blank" rel="noopener noreferrer">Cloudinary Privacy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="data-transfers">
+            <h2>8. International Data Transfers</h2>
+            <p>Because ARS BAZZAR relies on cloud networks provided by Google and Firebase, the information you supply may be routed, processed, and stored on secure data architecture located across multiple geographical regions. Google manages these nodes in accordance with standard international contractual clauses, ensuring data protection measures follow you across boundaries to safeguard your profile integrity.</p>
+        </section>
+
+        <section id="foreground-services">
+            <h2>9. Foreground Service Architecture & Battery Impact</h2>
+            <p>Our app respects standard mobile computing restraints. The integration of <code>FOREGROUND_SERVICE_DATA_SYNC</code> is entirely dependent on user preference for interactive support. It presents a persistent, non-dismissible system notification while active, ensuring you are fully aware that a secure sync pipeline is running. You may close the support channel at any time to instantly terminate this foreground process and eliminate any supplementary battery draw.</p>
+        </section>
+
+        <section id="data-retention">
+            <h2>10. Data Retention & Deletion Rights</h2>
+            <p>We preserve your account history only as long as your profile remains active or as required by Indian legal frameworks governing financial transactions and corporate compliance.</p>
+            <div class="callout">
+                <strong>How to Delete Your Account & Associated Data:</strong><br>
+                Users have the right to request permanent eradication of their personal records. You may formally submit an account deletion request through three channels:
+                <ul style="margin: 0.5rem 0 0 1rem; padding-left: 1rem; color: inherit;">
+                    <li>Our in-app Live Support Chat interface.</li>
+                    <li>Direct email to: <a href="mailto:support@arsbazzar.in" style="color: inherit; font-weight: bold; text-decoration: underline;">support@arsbazzar.in</a></li>
+                    <li>Official WhatsApp Customer Care channel.</li>
+                </ul>
+                <p style="margin-top: 0.5rem; color: inherit; font-size: 0.95rem;"><em>Note: To prevent fraudulent erasures, identity verification parameters may be requested prior to final system purging. Future versions of the application will incorporate a self-service account deletion mechanism directly within the user settings panel.</em></p>
+            </div>
+        </section>
+
+        <section id="security">
+            <h2>11. Information Security Standards</h2>
+            <p>We implement multi-layered security safeguards to protect your personal information against unauthorized access, alteration, disclosure, or destruction:</p>
+            <ul>
+                <li><strong>Transport Layer Security:</strong> All data transmissions between the ARS BAZZAR client application and our cloud back-ends are strictly enforced over encrypted <strong>HTTPS/TLS</strong> pathways.</li>
+                <li><strong>Identity Protection:</strong> Firebase Authentication protocols protect administrative access tiers, ensuring your operational profiles remain isolated.</li>
+                <li><strong>Infrastructure Control:</strong> Database read/write parameters are strictly regulated via server-side security logic. Only vetted corporate administrators can access backend panels to fulfill orders.</li>
+            </ul>
+            <p><em>Disclaimer: We use industry-standard security measures and continuously improve our security practices. We do not make claims regarding unverified cryptographic methods.</em></p>
+        </section>
+
+        <section id="children">
+            <h2>12. Children's Privacy</h2>
+            <p>ARS BAZZAR is engineered for a general audience. It is not designed or intentionally engineered to collect, store, or process personal data from children under the age of 13. If you are a parent or legal guardian and discover that your child has provided personal information without your supervision, please contact our support desk immediately. We will take swift corrective measures to scrub that data from our live databases.</p>
+        </section>
+
+        <section id="user-rights">
+            <h2>13. Your Rights Under Indian DPDP Act and GDPR</h2>
+            <p>As a data principal, you hold explicit structural freedoms over your data assets. These rights include:</p>
+            <ol>
+                <li><strong>Right to Access & Confirmation:</strong> You can review the exact operational data points we hold regarding your profile.</li>
+                <li><strong>Right to Correction & Erasure:</strong> You can demand the updating of inaccurate coordinates or the absolute deletion of your historical footprint.</li>
+                <li><strong>Right to Withdraw Consent:</strong> You can revoke application runtime permissions (such as Location, Contacts, or Notifications) directly through your smartphone operating system settings at any moment.</li>
+                <li><strong>Right to Grievance Redressal:</strong> You have the right to register issues regarding potential data mishandling with our dedicated support apparatus.</li>
+            </ol>
+        </section>
+
+        <section id="updates">
+            <h2>14. Updates to This Privacy Policy</h2>
+            <p>ARS INDUSTRY retains the right to modify this Privacy Policy to reflect changing regulatory requirements, legal standard shifts, or app updates. When adjustments occur, we will alter the "Last Updated" timestamp at the top of this document. We encourage users to periodically review this page to stay informed about how we protect their information.</p>
+        </section>
+
+        <section id="contact">
+            <h2>15. Contact & Grievance Redressal</h2>
+            <p>If you have questions, complaints, or feedback regarding our privacy practices, or if you wish to exercise your legal rights, please contact our support team:</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <strong>Official Email</strong>
+                    <a href="mailto:help.arsbazzar@gmail.com">help.arsbazzar@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <strong>Official Phone</strong>
+                    <a href="tel:+918389095682">+91 83890 95682</a>
+                </div>
+                <div class="contact-card">
+                    <strong>Official Web Domain</strong>
+                    <a href="https://arsbazzar.in" target="_blank" rel="noopener noreferrer">arsbazzar.in</a>
+                </div>
+                <div class="contact-card">
+                    <strong>Corporate Headquarters</strong>
+                    <span>ARS INDUSTRY, Domkal, Murshidabad, West Bengal, PIN - 742303, India</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 ARS INDUSTRY. All Rights Reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">This privacy statement is tailored exclusively for ARS BAZZAR distribution networks and compliance verification structures.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
